@@ -1,44 +1,87 @@
 import Link from "next/link"
+import Layout from "../src/Components/layout/Layout"
+import RightPart from "../src/Components/layout/RightPart"
+import Navbar from "../src/Components/Navbar"
+import {
+  FaFacebookSquare,
+  FaTwitterSquare,
+  FaLinkedin,
+  FaGithubSquare,
+  FaInstagramSquare,
+} from "react-icons/fa"
+
 export default function Home() {
   return (
-    <>
-      <div class="rightpart_in relative w-full float-left clear-both border-solid border-[#ebebeb] border-l min-h-[100vh]">
-      <div class="rightpart w-full min-h-[100vh] float-left relative bg-[#f8f8f8] pl-[450px]">
-
-        <div id="home" className="tokyo_tm_section animated">
-              <div className="container">
-                <div className="tokyo_tm_home w-full min-h-[100vh] clear-both flex items-center justify-center relative">
-                  <div className="home_content flex items-center">
-                    <div className="avatar min-w-[300px] min-h-[300px] relative rounded-full" data-type="wave"> 
-                      <div className="image absolute inset-0 bg-no-repeat bg-center bg-cover" data-img-url="/public/profile.jpeg"></div>
-                    </div>
-                    <div className="details ml-[80px]">
-                      <h3 className="name text-[55px] font-extrabold uppercase mb-[14px]">Issa <span>Halbi</span></h3>
-                      <p className="job font-montserrat font-medium max-w-[450px] mb-[25px]">I am a WordPress Developer at heart and create features that are best suited for the job at hand.</p>
-                      <div className="social w-full float-left">
-                        <ul className="m-0 list-none">
-                          <li className="mr-[8px] inline-block">
-                            <Link className="text-black text-[20px] transition-all duration-300 hover:text-black"     href="/Home">
-                              <i className="icon-facebook-squared"></i>
-                            </Link>
-                          </li>
-                          <li className="mr-[8px] inline-block">
-                            <Link className="text-black text-[20px] transition-all duration-300 hover:text-black" href="/About">
-                              <i className="icon-twitter-squared"></i>
-                            </Link>
-                          </li>
-                          <li className="mr-[8px] inline-block"><a className="text-black text-[20px] transition-all duration-300 hover:text-black" href="#"><i className="icon-behance-squared"></i></a></li>
-                          <li className="mr-[8px] inline-block"><a className="text-black text-[20px] transition-all duration-300 hover:text-black" href="#"><i className="icon-linkedin-squared"></i></a></li>
-                          <li className="inline-block"><a className="text-black text-[20px] transition-all duration-300 hover:text-black" href="#"><i className="icon-instagram-"></i></a></li>
-                        </ul>
-                      </div>
-                    </div>
+    <Layout>
+      <Navbar/>
+      <RightPart>
+        {/* <!-- HOME --> */}
+        <div id='home' class='tokyo_tm_section animated'>
+          <div class='container'>
+            <div class='tokyo_tm_home w-full min-h-[100vh] clear-both flex items-center justify-center relative'>
+              <div class='home_content flex items-center'>
+                <div
+                  class='avatar min-w-[300px] min-h-[300px] relative rounded-full'
+                  data-type='wave'>
+                  {/* <!-- data-type values are: "wave", "circle", "square"--> */}
+                  <div
+                    class='image absolute inset-0 bg-no-repeat bg-center bg-cover'
+                    data-img-url='assets/img/portfolio/1.jpg'></div>
+                </div>
+                <div class='details ml-[80px]'>
+                  <h3 class='name text-[55px] font-extrabold uppercase mb-[14px]'>
+                    Issa <span>Halbi</span>
+                  </h3>
+                  <p class='job font-montserrat font-medium max-w-[450px] mb-[25px]'>
+                    I am a WordPress Developer at heart and create features that
+                    are best suited for the job at hand.
+                  </p>
+                  <div class='social w-full float-left'>
+                    <ul class='m-0 list-none'>
+                      <li class='mr-[8px] inline-block'>
+                        <a
+                          class='text-black text-[20px] transition-all duration-300 hover:text-black'
+                          href='#'>
+                          <FaFacebookSquare className="w-auto h-auto" />
+                        </a>
+                      </li>
+                      <li class='mr-[8px] inline-block'>
+                        <a
+                          class='text-black text-[20px] transition-all duration-300 hover:text-black'
+                          href='#'>
+                          <FaTwitterSquare className="w-auto h-auto"/>
+                        </a>
+                      </li>
+                      <li class='mr-[8px] inline-block'>
+                        <a
+                          class='text-black text-[20px] transition-all duration-300 hover:text-black'
+                          href='#'>
+                          <FaLinkedin className="w-auto h-auto"/>
+                        </a>
+                      </li>
+                      <li class='mr-[8px] inline-block'>
+                        <a
+                          class='text-black text-[20px] transition-all duration-300 hover:text-black'
+                          href='#'>
+                          <FaGithubSquare className="w-auto h-auto"/>
+                        </a>
+                      </li>
+                      <li class='inline-block'>
+                        <a
+                          class='text-black text-[20px] transition-all duration-300 hover:text-black'
+                          href='#'>
+                          <FaInstagramSquare className="w-auto h-auto"/>
+                        </a>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-    </>
+        {/* <!-- /HOME --> */}
+      </RightPart>
+    </Layout>
   )
 }
