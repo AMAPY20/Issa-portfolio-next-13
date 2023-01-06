@@ -166,7 +166,7 @@
 	border-radius: 100%;
 }
 .tokyo_tm_home .avatar .image{
-    background-image: url(../public//profile.jpeg);
+    background-image: url(../public/profile.jpeg);
 	animation: morph 8s ease-in-out infinite 1s;
 	background-blend-mode: multiply;
 	-webkit-box-shadow: inset 0px 0px 0px 9px rgba(255,255,255,.3);

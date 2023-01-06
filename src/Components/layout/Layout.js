@@ -1,5 +1,4 @@
-import Navbar from "../Navbar"
-import Link from "next/link"
+
 export default function Layout({ children }) {
   return (
     <div
@@ -7,7 +6,7 @@ export default function Layout({ children }) {
       data-magic-cursor='show'
       data-enter='fadeInLeft'
       data-exit=''>
-      {children}
+          {children}
     </div>
   )
 }
