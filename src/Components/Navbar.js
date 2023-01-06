@@ -82,7 +82,7 @@ export default function Navbar() {
 
       <div class='leftpart w-[450px] h-[100vh] fixed flex items-center z-[12] px-[100px] py-[0px] bg-white'>
         <div class='leftpart_inner w-full h-auto'>
-          <div class='logo' data-type='image'>
+          <div class='logo' >
             <a href='#'>
               <img
                 class='max-w-[150px]'
