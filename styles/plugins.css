@@ -220,8 +220,8 @@ input[type="button"]{
   /* opacity: .8; */
 
   /* For safety - reset parent styles, that can break glyph codes*/
-  /* font-variant: normal; */
-  /* text-transform: none; */
+  /* font-variant: normal;
+  text-transform: none; */
 
   /* fix buttons height, for twitter bootstrap */
   /* line-height: 1em; */
@@ -239,7 +239,7 @@ input[type="button"]{
 
   /* Uncomment for 3D effect */
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
-/* } */
+/* } */ 
 
 .icon-wrench-1:before { content: '\e013'; } /* '' */
 .icon-basket-circled:before { content: '\e014'; } /* '' */

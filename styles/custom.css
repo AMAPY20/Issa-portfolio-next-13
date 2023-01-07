@@ -116,7 +116,7 @@
     }
 }
 
-.tokyo_tm_section{
+/* .tokyo_tm_section{  
 	position: absolute;
     top: 0px;
 	bottom: 0px;
@@ -132,22 +132,22 @@
 	-moz-transition: visibility 1s linear, opacity 0s linear;
 	-webkit-transition: visibility1s linear, opacity 0s linear;
 	-o-transition: visibility 1s linear, opacity 0s linear;
-}
-.tokyo_tm_section.animated {
+} */
+/* .tokyo_tm_section.animated {
 	opacity: 1;
 	visibility: visible;
 	z-index: 9;
-}
-.tokyo_tm_section.active {
+} */
+/* .tokyo_tm_section.active {
 	opacity: 1;
 	visibility: visible;
 	z-index: 10;
-}
-.tokyo_tm_section.hidden {
-	opacity: 0;
-	visibility: hidden;
-	z-index: 9;
-}
+} */
+    /* .tokyo_tm_section.hidden {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 9;
+    } */
 .tokyo_tm_section::-webkit-scrollbar{
   width: 0px;
 }
@@ -227,6 +227,17 @@
     border-top-color: #f6fbff;
     border-width: 14px 13px 0px 0px;
     margin-left: 2px;
+}
+
+.custom_list{
+    margin-left: 1rem;
+}
+
+.custom_list_b{
+    margin-bottom: .3rem;
+}
+.resumeCustom_li:last-child{
+    padding-bottom: 0 !important;
 }
 .tokyo_tm_testimonials .owl-carousel .owl-stage-outer{
 	overflow: hidden;

@@ -66,7 +66,7 @@
         @apply w-full h-auto clear-both float-left;
     }
     .tokyo_tm_button a{
-        @apply text-white inline-block bg-black pt-[9px] pr-[40px] pb-[14px] pl-[40px] transition-all duration-300;
+        @apply text-white inline-block bg-black pt-[14px] pr-[40px] pb-[14px] pl-[40px] transition-all duration-300;
     }
     .tokyo_progress{
         @apply w-full h-auto clear-both float-left;
@@ -688,8 +688,8 @@
     body.dark .tokyo_tm_progressbox{
         @apply bg-[#494b50];
     }
-    body.dark .tokyo_tm_skill_list ul li .svg{
-        @apply text-white;
+    body.dark .tokyo_tm_skill_list ul li span .custom-list {
+        @apply text-white ;
     }
     body.dark .tokyo_tm_resumebox{
         @apply bg-[#494b50];
